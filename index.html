@@ -273,6 +273,35 @@
             display: inline-block;
         }
 
+        /* Colorful service cards */
+        .service-card:nth-child(1) {
+            border-top: 5px solid #4a6fa5;
+        }
+        .service-card:nth-child(2) {
+            border-top: 5px solid #ff9a5a;
+        }
+        .service-card:nth-child(3) {
+            border-top: 5px solid #66cc99;
+        }
+        .service-card:nth-child(4) {
+            border-top: 5px solid #ff6b6b;
+        }
+        .service-card:nth-child(5) {
+            border-top: 5px solid #9b59b6;
+        }
+        .service-card:nth-child(6) {
+            border-top: 5px solid #3498db;
+        }
+        .service-card:nth-child(7) {
+            border-top: 5px solid #f1c40f;
+        }
+        .service-card:nth-child(8) {
+            border-top: 5px solid #1abc9c;
+        }
+        .service-card:nth-child(9) {
+            border-top: 5px solid #e74c3c;
+        }
+
         .service-card h3 {
             color: #4a6fa5;
             margin-bottom: 1rem;
@@ -332,6 +361,19 @@
             color: #4a6fa5;
             width: 25px;
             text-align: center;
+        }
+
+        .creator-info {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            border-left: 4px solid #4a6fa5;
+        }
+
+        .creator-info h4 {
+            color: #4a6fa5;
+            margin-bottom: 0.5rem;
         }
 
         footer {
@@ -476,7 +518,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="data:image/png;base64,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" alt="SHOP SAVVY Logo" class="logo">
+            <img src="data:image/png;base64,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" alt="SHOP SAVVY LOGO" class="logo">
             <div class="company-name">SHOP SAVVY</div>
         </div>
         <nav>
@@ -564,6 +606,34 @@
                     <h3>Learning Games</h3>
                     <p>Interactive games that make learning fun and memorable.</p>
                 </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <h3>Book Recommendations</h3>
+                    <p>Personalized book suggestions based on your interests and reading level.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3>Personality Quiz</h3>
+                    <p>Discover your learning style and personality traits with our fun quiz.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laugh-squint"></i>
+                    </div>
+                    <h3>Fun Quiz</h3>
+                    <p>Test your knowledge with our entertaining and educational quizzes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Fun Videos</h3>
+                    <p>Enjoy educational yet entertaining videos on various topics.</p>
+                </div>
             </div>
         </section>
 
@@ -573,6 +643,13 @@
                 <div class="about-text">
                     <p>Welcome to SHOP SAVVY, your premier destination for educational resources and learning tools. Founded in 2023, we are committed to revolutionizing the way students learn by providing high-quality, accessible, and engaging educational materials.</p>
                     <p>Our team of educators, designers, and technologists work together to create resources that cater to different learning styles and needs. Whether you're a student looking for study materials, a teacher seeking classroom resources, or a parent wanting to support your child's education, we have something for you.</p>
+                    
+                    <div class="creator-info">
+                        <h4>Creator of the Website</h4>
+                        <p><i class="fas fa-user"></i> Ayana Roy</p>
+                        <p><i class="fas fa-envelope"></i> ayanaroy150@gmail.com</p>
+                    </div>
+                    
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i> shopsavvy@gmail.com</p>
                         <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
@@ -615,6 +692,10 @@
                     <li><a href="#">Storybooks</a></li>
                     <li><a href="#">Educational Tools</a></li>
                     <li><a href="#">PDFs & Notes</a></li>
+                    <li><a href="#">Book Recommendations</a></li>
+                    <li><a href="#">Personality Quiz</a></li>
+                    <li><a href="#">Fun Quiz</a></li>
+                    <li><a href="#">Fun Videos</a></li>
                 </ul>
             </div>
             <div class="copyright">
